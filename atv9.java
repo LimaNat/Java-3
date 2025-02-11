@@ -1,0 +1,45 @@
+package com.mycompany.atv5;
+
+import java.util.Scanner;
+
+public class atv9 {
+public static void main(String[] args) {
+        
+    Scanner ler = new Scanner(System.in);
+    
+    System.out.println("Digite o nome do aluno: ");
+    String nome = ler.nextLine();
+    
+    double[] notas = new double[2];
+        for (int i = 0; i < 2; i++) {
+            
+    do {    
+        System.out.println("Digite a" + (i+1) + "º nota: ");
+        notas[i] = ler.nextDouble();
+    } while (notas[i] < 0 || notas[i] > 10 );
+    
+    do {
+    System.out.println("Digite a" + (i+1) + "º nota: ");
+    notas[i] = ler.nextDouble();
+    } while (notas[i] < 0 || notas[i] > 10);    
+    
+    
+    double media = (notas[i] + notas[i]) / 2;
+    
+   
+    
+    System.out.println ("Nome do aluno: " + nome);
+    System.out.println ("1º nota: " + notas[i]);
+    System.out.println ("2º nota:" + notas[i]);
+    System.out.println ("Média: " + media);
+    
+    if (media < 4.9) {
+        System.out.println("Recuperação!");
+    } else if (media >= 7){
+        System.out.println("Aprovado!");
+    }else {
+        System.out.println("Reprovado!");
+        }
+    }
+    }
+}
