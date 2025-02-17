@@ -1,0 +1,13 @@
+package com.mycompany.biblioteca;
+
+public class main {
+    public static void main(String[] args) {
+        Livro livro1 = new Livro("O lado feio do amor", "Colleen hoover", 320, 55);
+        System.out.println("Dados do livro");
+        System.out.println("Titulo: " + livro1.getTitulo());
+        System.out.println("Autor: " + livro1.getAutor());
+        System.out.println("Número de páginas: " + livro1.getNpaginas());
+        System.out.println("Preço: " + livro1.getPreco);
+    }
+    
+}
